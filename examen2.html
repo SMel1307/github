@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <script>
+        function usuario(){
+            var porNombre=document.getElementsByName("usuario")[0].value;
+            document.getElementById("resultado").innerHTML=" \
+            Bienvenid@: "+porNombre;
+
+        }
+
+        function cambioDolar(){
+        
+var dol = 6.96; 
+var re ;   
+var bol =parseInt(document.getElementById('boliviano').value, 10);
+ 
+re = bol / dol ;
+document.getElementById('resul').innerHTML= re;
+
+}
+
+    </script>
+</head>
+<body>
+
+    <div id='cssmenu'>
+        <ul>
+            <div id="logo" class="pull-left">
+                <h1>
+                    GAMEBOL
+                </h1>
+            </div>
+        <li><a href='#'>Inicio</a></li>
+        
+           <li class='active'><a href='#'>SOBRE NOSOTROS</a>
+              <ul>
+                 <li><a href='#'>MISION</a>
+                 </li>
+                 <li><a href='#'>VISION</a>
+                 </li>
+              </ul>
+           </li>
+              <li class='active'><a href='#'>PRODUCTOS</a>
+              <ul>
+                 <li><a href='#'>CATALOGO</a>
+                 </li>
+                 <li><a href='#'>ENTREGAS</a>
+                 </li>
+              </ul>
+           </li>
+            <li class='active'><a href='#'>CONTACTO</a></li>
+        </div>
+        <div id='container1'>
+            <img src="image.jpg" alt="Imagen 1">
+        </div>
+        <div id="seccion2">
+            <div id='container2'>
+            <div class="login100-form-avatar">
+                <img src="mascota.jpeg" alt="AVATAR">
+            </div>
+             <a href='#' class="txt1">ARTICULOS MASCOTAS</a></div>
+             <div id='container2'>
+             <div class="login100-form-avatar">
+                <img src="otros.png" alt="AVATAR">
+            </div>
+             <a href='#' class="txt1">ARTICULOS VARIOS</a>
+    </div>
+    </div>
+          
+        <div class="limiter">
+            <div class="container-login100" style="background-image: url('images/logo.png');">
+                <div class="wrap-login100 p-t-190 p-b-30">
+                        <form class="login100-form validate-form" id="form1">
+                        <span class="login100-form-title p-t-20 p-b-45">
+                            Iniciar Sesion
+                        </span>
+                        <div class="wrap-input100 validate-input m-b-10" data-validate = "Username is required">
+                            <input class="input100" type="text" id="usuario" name="usuario" placeholder="Usuario">
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-user"></i>
+                            </span>
+                           
+                        </div>
+                    </form>
+    
+                        <div class="container-login100-form-btn p-t-10">
+                            <button id="boton" class="login100-form-btn" onclick="usuario()">
+                                Iniciar
+                            </button>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <div id='container3'>
+                    <div id="imglog">
+                        <img src="logo1.png" alt="AVATAR"></div>
+                        <h2>
+                            <div id="resultado"></div>
+                        </h2>
+                        
+                </div>
+                <div id='container4'>
+                <p>
+                    Somos un equipo de soñadores. Siempre vemos las cosas fuera de la caja. Nos gustan las cosas sencillas, robustas y minimalistas.
+                    GAMEBOL es una innovadora tienda minorista en línea, donde basamos todos nuestros artículos a la venta en los dispositivos más creativos, útiles y deseables.
+                </p>
+                </div>
+                <div id='seccion1'>
+                    <div id='container5'>
+                        <p>Nuestro objetivo como GAMEBOL es poner al alcance de todos los peruanos productos únicos, de la mejor calidad, y a los mejores precios. Ofreciendo, además, una compra 100% segura y con diversas formas de pago, incluyendo el pago en efectivo contra-entrega en todo el Bolivia.
+
+                            Te reiteramos la bienvenida a nuestra tienda on-line, y esperamos sinceramente que te unas a la familia GAMEBOL.</p>
+                    </div>
+                    <div id='container6'>
+                            <span id="flot">Boliviano</span>
+                            <input type="text"  id="boliviano" placeholder="1"> 
+                            <span id="flot">Dolar</span>
+                            <p type="text" id="resul" >6.96</p>
+                            <button type="button"  class="btn" onClick="cambioDolar()">
+                                convertir a dólar
+                               </button>
+                    
+                    </div>
+                    <div id='container7'><h2>Preguntas Frecuentes</h2>
+                        <h3>¿POR QUÉ COMPRAR EN GAMEBOL?</h3> 
+                        <p>
+                           A diferencia de otras tiendas on-line, en GAMEBOL ponemos a disposición de nuestros clientes en el Bolivia productos únicos, que se vienen convirtiendo en tendencia a nivel internacional. Ofreciendo, además, los mejores precios del mercado, envío gratis, una compra 100% segura y diversas formas de pago (incluyendo pago en efectivo contraentrega).
+                        </p> 
+                        <H3>¿EN CUÁNTO TIEMPO RECIBIRÉ MI PEDIDO?</H3>
+                        <P>El tiempo regular de envío es de 1 a 3 días útiles (sin considerar fines de semana ni feriados). Si ya pasaron más de 5 días útiles y aún no recibes tu pedido, nos puedes llamar o contactar vía WhatsApp al +59167156471
+                        </P>
+                        <H3> ¿CUÁL ES EL COSTO DEL ENVÍO?</H3>
+                        <P>¡El envío es totalmente gratis a todo La Paz!</P>
+                        <H3>¿ES POSIBLE HACER UN CAMBIO O CANCELAR UN PEDIDO?</H3>
+                     <P>Únicamente se puede realizar algún cambio o cancelar un pedido dentro de las siguientes 12 horas de haberlo realizado.
+                        Pasado este tiempo, ningún cambio o cancelación podrá realizarse, ya que todos nuestros procesos son automatizados, y nuestro sistema no lo permite.</P>
+                       <h3>¿ENTREGAN COMPROBANTE DE PAGO?</h3>
+                       <p>¡Claro! El comprobante de pago por tu compra se te enviará por correo electrónico tras la entrega de tu pedido.</p>
+                       
+                </div>
+                </div>
+                <div id='container8'>
+                    <div class="slider-container">  
+                        <img class="slider-item" src="biberon.jpg"/>
+                        <img class="slider-item" src="tomatodo.jpeg"/>
+                        <img class="slider-item" src="platito.jpeg"/>
+                      </div>  
+                </div>
+
+</body>
+</html>
