@@ -41,4 +41,6 @@ header, .alert{
 }
 .lab{
 background-color: bisque;
+font-family: 'Courier New', Courier, monospace;
+color: #ffffff;
 }
