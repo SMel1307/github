@@ -143,7 +143,7 @@ document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.value = 'Sending...';
+   btn.value = 'Enviando...';
 
    const serviceID = 'default_service';
    const templateID = 'tienda';
@@ -151,7 +151,7 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'COMPRAR';
-      alert('Sent!');
+      alert('Enviado!');
     }, (err) => {
       btn.value = 'COMPRAR';
       alert(JSON.stringify(err));
